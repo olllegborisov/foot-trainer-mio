@@ -1,0 +1,2238 @@
+@import '../utils/utils';
+
+// * {
+//   overflow: hidden;
+// }
+
+.container-box {
+  @include nsm {
+    padding: 0 3%;
+  }
+}
+.main-wrapper {
+  overflow: hidden;
+}
+.video-section {
+  justify-content: center;
+  display: flex;
+  &__video {
+    width: 1920px;
+    height: 900px;
+    display: block;
+    @include nlg {
+      width: 157.5%;
+      height: auto;
+    }
+    @include nmd {
+      width: 100%;
+    }
+    @include nsm {
+      height: 107.4vw;
+      width: 230vw;
+    }
+  }
+}
+.container-box {
+  width: 1236px;
+  @include nlg {
+    width: 99.75vw;
+  }
+  @include nmd {
+    padding: 15px 0px;
+  }
+}
+.description {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #121212;
+  @include nlg {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__video {
+    height: 900px;
+    @include nlg {
+    }
+    @include nmd {
+      // width: 100%;
+      height: 158vw;
+    }
+    @include nsm {
+      height: 261vw;
+      
+    }
+  }
+
+  & .container-box {
+    position: relative;
+  }
+
+  &__container {
+    // background: url('/images/landing/y-foot-trainer-mio/description/desktop/bg.webp');
+    // background-position: center;
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    @include nlg {
+      width: 156%;
+      height: 71.6vw;
+    }
+    @include nmd {
+      // background: url('/images/landing/y-foot-trainer-mio/description/tablet/bg.webp');
+      // background-size: cover;
+      width: 100%;
+      height: 155.4vw;
+    }
+    @include nsm {
+      // background: url('/images/landing/y-foot-trainer-mio/description/mobile/bg.webp');
+      // background-size: cover;
+      height: 100%;
+    }
+  }
+
+  &__japanese-character {
+    @include nlg {
+      width: 89.1vw;
+    }
+  }
+
+  &__frame-title {
+    position: absolute;
+    top: 0px;
+    left: 404px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 32px;
+    z-index: 1;
+    @include nlgxx {
+      right: 23vw;
+    }
+    @include nlg {
+      right: 35vw;
+    }
+
+    @include nmd {
+      padding-top: 4.2vw;
+    }
+    @include nsm {
+      padding-top: 15.3vw;
+      left: 6vw;
+      right: unset;
+      
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 88px;
+    margin-top: -62px;
+    margin-left: 37px;
+    @include nlg {
+      font-size: 6.85vw;
+    }
+    @include nmd {
+      font-size: 8.45vw;
+      margin-left: 0px;
+      margin-top: -0.8vw;
+      width: 82vw;
+    }
+    @include nsm {
+      display: none;
+      font-size: 12.2vw;
+      margin-top: 3vw;
+      width: 88vw;
+      order: 2;
+      text-align: center;
+      line-height: 14.4vw;
+    }
+  }
+  &__title-mob {
+    display: none;
+    @include nsm {
+      display: block;
+      font-size: 12.2vw;
+      margin-top: 3vw;
+      width: 88vw;
+      order: 2;
+      text-align: center;
+      line-height: 14.4vw;
+      font-weight: 900;
+
+    }
+  }
+  &__logo {
+    margin-top: 4px;
+
+    @include nlg {
+      width: 21.05vw;
+    }
+    @include nmd {
+      width: 33.05vw;
+      margin-top: 0.9vw;
+    }
+    @include nsm {
+      order: 1;
+      width: 46.05vw;
+      margin-top: -18.1vw;
+    }
+  }
+  &__wrapper {
+    position: absolute;
+    left: 981px;
+    top: 249px;
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+
+    @include nlgxx {
+      left: 50vw;
+      top: 318px;
+    }
+
+
+    @include nmd {
+      justify-content: flex-start;
+      left: 0vw;
+      top: 32vw;
+    }
+    @include nsm {
+      padding-bottom: 6vw;
+    }
+  }
+  &__frame-text {
+    max-width: 689px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 124px;
+    @include nlgxx {
+      margin-top:  65px;
+    }
+    @include nlg {
+      // margin-top: 10.01vw;
+      margin-top: 8vw;
+    }
+
+    @include nmd {
+      margin-top: 86.7vw;
+      align-items: flex-start;
+      width: 90vw;
+      text-align: left;
+    }
+    @include nsm {
+      margin-top: 116vw;
+    }
+  }
+  &__subtitle {
+    font-weight: 900;
+    font-size: 53px;
+
+    @include nlg {
+      font-size: 4.28vw;
+    }
+    @include nmd {
+      font-size: 7.89vw;
+      margin-left: 5vw;
+
+      width: 89vw;
+      display: inline-block;
+    }
+    @include nsm {
+      font-size: 13.74vw;
+      line-height: 16vw;
+    }
+  }
+  &__subtitle-mini {
+    font-weight: 600;
+    font-size: 30px;
+
+    @include nlg {
+      font-size: 2.42vw;
+    }
+    @include nmd {
+      width: 80vw;
+      font-size: 4.4vw;
+      margin-left: 5vw;
+      margin-top: -3px;
+      display: inline-block;
+    }
+    @include nsm {
+      width: 92vw;
+      font-size: 8vw;
+      margin-top: 1.4vw;
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    max-width: 528px;
+    margin-top: 39px;
+    line-height: 28px;
+
+    @include nlg {
+      font-size: 1.615vw;
+      max-width: 42vw;
+    }
+    @include nmd {
+      font-size: 2.52vw;
+      max-width: 85vw;
+      margin-left: 4.5vw;
+      margin-top: 3.78vw;
+      width: 85vw;
+    }
+    @include nsm {
+      font-size: 4.99vw;
+      margin-top: 5.7vw;
+      line-height: 7.2vw;
+      max-width: 101vw;
+      width: 88vw;
+    }
+  }
+}
+.effect {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #121212;
+  @include nsm {
+    height: 223.13vw;
+  }
+  
+  &__video {
+    height: 900px;
+    @include nlg {
+      height: 72.6vw;
+    }
+    @include nmd {
+      height: 145vw;
+    }
+    @include nsm {
+      height: 145.31vw;
+      object-fit: cover;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__wrapper {
+    position: absolute;
+    color: #fff;
+    top: 547px;
+    left: 871px;
+    @include nlgxx {
+      left: 45.5vw;
+    }
+    @include nlgm {
+      left: 42vw;
+    }
+    @include nlg {
+      top: 44.15vw;
+    }
+    @include nmd {
+      top: 106.6vw;
+      left: 5.4vw;
+    }
+    @include nsm {
+      top: 104.5vw;
+    }
+  }
+
+  &__frame {
+    max-width: 725px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include nmd {
+      max-width: 89vw;
+      flex-direction: row;
+    }
+    @include nsm {
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: 88px;
+    @include nlg {
+      font-size: 7.1vw;
+    }
+    @include nmd {
+      font-size: 10.1vw;
+    }
+    @include nsm {
+      font-size: 18.3vw;
+    }
+  }
+
+  &__subtitle-mini {
+    font-weight: 600;
+    font-size: 34px;
+    max-width: 518px;
+    display: block;
+    margin-left: 8px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    @include nlg {
+      font-size: 2.745vw;
+      margin-left: 1.85vw;
+    }
+    @include nmd {
+      font-size: 4.3vw;
+      margin-left: 4.5vw;
+      max-width: 36vw;
+    }
+    @include nsm {
+      font-size: 10.1vw;
+      margin-left: 1.7vw;
+      max-width: 86vw;
+      line-height: 11.15vw;
+    }
+  }
+
+  &__subtitle-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    width: 701px;
+    margin-top: 18px;
+    @include nlg {
+      font-size: 1.615vw;
+      max-width:  56vw;
+    }
+    @include nmd {
+      margin-top: 1vw;
+      font-size: 2.59vw;
+      max-width: 78vw;
+      width: 91.28vw;
+      line-height: 27px;
+      text-align: left;
+    }
+    @include nsm {
+      font-size: 4.99vw;
+      max-width: 87vw;
+      line-height: 7.2vw;
+      margin-top: 5.5vw;
+    }
+  }
+}
+.rejuvenation {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #350303;
+
+  @include nsm {
+    height: 359vw;
+  }
+
+  &__video {
+    position: absolute;
+  }
+
+  &__container {
+    // background: url('/images/landing/y-foot-trainer-mio/rejuvenation/desktop/bg.webp');
+    // background-position: center;
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    // width: 100%;
+    @include nlg {
+      width: 156%;
+      height: none;
+    }
+    @include nmd {
+      // background: url('/images/landing/y-foot-trainer-mio/rejuvenation/tablet/bg.webp');
+      // background-size: cover;
+      height: 115vw;
+    }
+    @include nsm {
+      height: max-content;
+
+    }
+  }
+
+  &__video {
+    @include nmd {
+      width: 99vw;
+    }
+    @include nsm {
+      width: 100vw;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6.5px;
+    @include nmd {
+      flex-direction: column;
+      padding-left: 6.3vw;
+    }
+  }
+
+  &__frame {
+    z-index: 1;
+    max-width: 503px;
+    margin-top: 103px;
+    position: absolute;
+    left: 349px;
+    @include nlgxx {
+      right:57vw;
+      left: unset;
+    }
+    @include nlg {
+      max-width: 41vw;
+    }
+    @include nmd {
+      right: 39vw;
+      margin-top: 5vw;
+      max-width: 59vw;
+    }
+    @include nsm {
+      max-width: 86vw;
+      margin-top: 169.5vw;
+      right: 8vw;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 34px;
+    @include nlg {
+      font-size: 2.7vw;
+    }
+    @include nmd {
+      font-size: 4.5vw;
+    }
+    @include nsm {
+      font-size: 6.6vw;
+    }
+  }
+
+  &__subtitle-bold {
+    font-weight: 900;
+    font-size: 61px;
+    line-height: 66px;
+    @include nlg {
+      font-size: 4.95vw;
+    }
+    @include nmd {
+      font-size: 6.34vw;
+      line-height: 7vw;
+    }
+    @include nsm {
+      font-size: 10.34vw;
+      line-height: 11.9vw;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 41px;
+    line-height: 28px;
+    max-width: 476px;
+    @include nlg {
+      font-size: 1.7vw;
+      width: 37vw;
+    }
+    @include nmd {
+      font-size: 2.6vw;
+      width: 45.5vw;
+      margin-top: 2.3vw;
+      line-height: 32px;
+    }
+    @include nsm {
+      font-size: 5vw;
+      width: 87.7vw;
+      margin-top: 4.3vw;
+      line-height: 7.5vw;
+      max-width: 700px;
+    }
+  }
+
+  &__items {
+    margin-top: 194px;
+    position: absolute;
+    left: 1151px;
+    @include nlgxx {
+      left: 64vw
+    }
+
+    @include nmd {
+      margin-top: 51vw;
+      left: 2vw;
+
+    }
+    @include nsm {
+      margin-top: 259vw;
+      left: 6vw;
+    }
+  }
+
+  &__item {
+    padding: 19px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    @include nmd {
+      padding: 10.5px 0px;
+    }
+    @include nsm {
+      padding: 2.4vw 0vw;
+    }
+  }
+
+  &__img {
+    margin-right: 19px;
+    @include nlg {
+      width: 7.35vw;
+    }
+    @include nmd {
+      width: 10.35vw;
+      margin-right: 1.8vw;
+    }
+    @include nsm {
+      width: 18.55vw;
+      margin-right: 3.7vw;
+    }
+  }
+
+  &__span {
+    max-width: 308px;
+    display: inline-block;
+    font-size: 18px;
+    @include nlg {
+      font-size: 1.45vw;
+      max-width: 24.9vw;
+    }
+    @include nmd {
+      font-size: 2.1vw;
+      max-width: 35.9vw;
+    }
+    @include nsm {
+      font-size: 3.83vw;
+      max-width: 65.9vw;
+      line-height: 5.3vw;
+    }
+  }
+}
+.flatypodia {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  //video
+  &__img-wrapper {
+    position: absolute;
+    @include nlg {
+      width: 155%;
+    }
+    @include nmd {
+      width: 100%;
+    }
+  }
+  //video
+  &__img{
+    position: absolute;
+    width: 1920px;
+    // @include nlg {
+    //   width: 155%;
+    // }
+    @include nmd {
+      width: 100%;
+      top: 61vw;
+      height: 47.27vw;
+    }
+    @include nsm {
+      top: 131vw;
+    }
+  }
+  &__container {
+    background: black;
+    // background-position: center;
+    // background-size: cover;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include nlg {
+      height: 71.6vw;
+    }
+    @include nmd {
+      height: 107.6vw;
+
+      background-color: #610E10;
+    }
+    @include nsm {
+      height: 179.6vw;
+    }
+  }
+// flex
+  & .container-box {
+    display: flex;
+    justify-content: flex-end;
+    @include nmd {
+      width: 97.75vw;
+      justify-content: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 821px;
+    margin-top: 68px;
+    z-index: 1;
+    align-items: flex-end;
+    position: absolute;
+    left: 759px;
+    @include nlgxx{
+      left: 40vw;
+    }
+    @include nlg {
+      margin-top: 5.49vw;
+      max-width: 67vw;
+      left: 30vw;
+    }
+    @include nmd {
+      margin-top: 56.7vw;
+      max-width: 87vw;
+      text-align: right;
+      left: 5vw;
+    }
+    @include nsm {
+      align-items: start;
+      margin-top: 59vw;
+      text-align: left;
+      left: 6vw;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 34.2px;
+    line-height: 41.14px;
+    @include nlg {
+      font-size: 2.74vw;
+      line-height: 3.3vw;
+    }
+    @include nmd {
+      font-size: 4.2vw;
+      line-height: 3.3vw;
+    }
+    @include nsm {
+      font-size: 6.9vw;
+      line-height: 8.3vw;
+    }
+  }
+
+  &__subtitle-red {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 81px;
+    // color: #e02725;
+    text-transform: uppercase;
+    margin-top: 7px;
+    text-align: end;
+    @include nlg {
+      font-size: 5.65vw;
+      line-height: 6.54vw;
+      margin-top: 0.9vw;
+    }
+    @include nmd {
+      font-size: 9vw;
+      line-height: 9.5vw;
+      margin-top: 3vw;
+      text-align: start;
+    }
+    @include nsm {
+      text-align: start;
+      font-size: 9vw;
+      margin-top: 1.5vw;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 19px;
+    width: 591px;
+    text-align: end;
+    @include nlg {
+      font-size: 1.69vw;
+      line-height: 2.26vw;
+      margin-top: 1.53vw;
+      width: 46.70vw;
+    }
+    @include nmd {
+      font-size: 2.58vw;
+      line-height: 3.7vw;
+      margin-top: 4vw;
+      width: 86.59vw;
+      text-align: start;
+    }
+    @include nsm {
+      text-align: start;
+      font-size: 5.55vw;
+      line-height: 7.2vw;
+      margin-top: 6vw;
+    }
+  }
+
+  &__frame-wrapper {
+    position: relative;
+    margin-top: 207px;
+    @include nlg {
+      margin-top: 10.16vw;
+    }
+    @include nmd {
+      display: none;
+    }
+  }
+
+  &__frame {
+    width: 628px;
+    height: 139px;
+    background: linear-gradient(
+      67.14deg,
+      rgb(224, 39, 37) 0.112%,
+      rgba(224, 39, 37, 0) 99.878%
+    );
+    opacity: 0.4;
+    @include nlg {
+      width: 50.3vw;
+      height: 11.25vw;
+    }
+  }
+
+  &__footnote {
+    font-size: 41.01px;
+    font-weight: 900;
+    text-transform: uppercase;
+    @include nlg {
+      font-size: 3.31vw;
+    }
+  }
+
+  &__footnote-first {
+    position: absolute;
+    top: 16%;
+    padding-left: 39px;
+  }
+  &__footnote-second {
+    position: absolute;
+    top: 48%;
+    padding-left: 39px;
+  }
+}
+.skin {
+  display: flex;
+  &__container {
+    background: url('/images/landing/y-foot-trainer-mio/skin/desktop/bg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    @include nlg {
+      width: 156%;
+      height: 72.6vw;
+    }
+    @include nmd {
+      background: url('/images/landing/y-foot-trainer-mio/skin/tablet/bg.webp');
+      background-size: cover;
+      height: 100vw;
+    }
+    @include nsm {
+      background: url('/images/landing/y-foot-trainer-mio/skin/mobile/bg.webp');
+      background-size: cover;
+      height: 394vw;
+    }
+  }
+
+  & .container-box {
+    padding-top: 137px;
+    @include nlg {
+      padding-top: 11vw;
+    }
+    @include nmd {
+      padding: 9vw 5.2vw 15px 5.2vw;
+    }
+    @include nsm {
+      padding: 7vw 3.2vw 15px 6.2vw;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 744px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 34.5px;
+    line-height: 51.14px;
+    @include nlg {
+      font-size: 2.785vw;
+      line-height: 4.1vw;
+      width: 61vw;
+    }
+    @include nmd {
+      font-size: 4.4vw;
+      line-height: 5.1vw;
+    }
+    @include nsm {
+      font-size: 6.6vw;
+      line-height: 12.1vw;
+    }
+  }
+
+  &__subtitle-red {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 92px;
+    color: #e02725;
+    @include nlg {
+      font-size: 6.46vw;
+      line-height: 7.45vw;
+      width: 61vw;
+      display: inline-block;
+    }
+    @include nmd {
+      font-size: 6.7vw;
+      line-height: 7.95vw;
+    }
+    @include nsm {
+      font-size: 9.35vw;
+      line-height: 10.95vw;
+    }
+  }
+
+  &__text-bold {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 619px;
+    margin-top: 24px;
+    @include nlg {
+      font-size: 1.615vw;
+      line-height: 2.26vw;
+      max-width: 50vw;
+      margin-top: 1.9vw;
+    }
+    @include nmd {
+      font-size: 2.5vw;
+      line-height: 3.6vw;
+      max-width: 48vw;
+    }
+    @include nsm {
+      font-size: 5.3vw;
+      line-height: 7.1vw;
+      max-width: 85vw;
+      margin-top: 5.9vw;
+    }
+  }
+
+  &__images {
+    display: flex;
+    margin-top: 54px;
+    @include nlg {
+      margin-top: 4.4vw;
+    }
+    @include nmd {
+      margin-top: 7.4vw;
+    }
+    @include nsm {
+      margin-top: 10.4vw;
+    }
+  }
+
+
+
+  &__img {
+    margin-right: 22px;
+    width: 177px;
+    @include nlg {
+      width: 14.3vw;
+      height: 14.3vw;
+    }
+    @include nmd {
+      margin-right: 2vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    @include nsm {
+      width: 42.7vw;
+      height: 42.7vw;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 558px;
+    margin-top: 20px;
+    @include nlg {
+      font-size: 1.615vw;
+      line-height: 2.26vw;
+      max-width: 45vw;
+    }
+    @include nmd {
+      font-size: 2.6vw;
+      line-height: 3.2vw;
+      max-width: 47vw;
+    }
+    @include nsm {
+      margin-top: 8.3vw;
+      font-size: 4.8vw;
+      line-height: 7.2vw;
+      max-width: 88vw;
+      text-align: center;
+    }
+  }
+}
+.features {
+  @include nlg {
+    display: flex;
+  }
+
+  &__container {
+    background: url('/images/landing/y-foot-trainer-mio/features/desktop/bg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    @include nlg {
+      width: 156%;
+      height: 72.6vw;
+    }
+    @include nmd {
+      background: url('/images/landing/y-foot-trainer-mio/features/tablet/bg.webp');
+      background-size: cover;
+      height: 121.6vw;
+    }
+    @include nsm {
+      background: url('/images/landing/y-foot-trainer-mio/features/mobile/bg.webp');
+      background-size: cover;
+      height: 275.6vw;
+    }
+  }
+
+  & .container-box {
+    padding-top: 215px;
+    @include nlg {
+      padding-top: 17.35vw;
+    }
+    @include nmd {
+      padding-top: 80vw;
+    }
+    @include nsm {
+      padding-top: 149vw;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    @include nmd {
+      align-items: start;
+    }
+  }
+
+  &__items {
+    max-width: 290px;
+    text-align: left;
+    @include nlg {
+      max-width: 23.4vw;
+    }
+    @include nmd {
+      display: flex;
+      max-width: 675px;
+      flex-wrap: wrap;
+      margin-left: 6vw;
+    }
+    @include nsm {
+    }
+  }
+
+  &__item:nth-of-type(1) {
+    order: 1;
+  }
+
+  &__item:nth-child(2) {
+    order: 3;
+    width: 50vw;
+    @include nsm {
+      order: 2;
+    }
+  }
+
+  &__item:nth-child(3) {
+    order: 2;
+    max-width: 263px;
+    @include nsm {
+      order: 3;
+      max-width: 495px;
+    }
+  }
+
+  &__item:nth-child(4) {
+    order: 4;
+    width: 25vw;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 26px 0px;
+    text-transform: uppercase;
+    @include nmd {
+      padding: 36px 0px;
+    }
+    @include nsm {
+      padding: 9.3vw 0px;
+    }
+  }
+
+  &__item:first-child,
+  &__item:nth-of-type(2) {
+    max-width: 159px;
+    @include nlg {
+      max-width: 19vw;
+    }
+    @include nmd {
+      max-width: 39.4vw;
+    }
+    @include nsm {
+      max-width: 62.4vw;
+    }
+  }
+
+  &__accent {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 88px;
+    color: #e02725;
+    margin-right: 20px;
+    @include nlg {
+      font-size: 6.45vw;
+      line-height: 7.1vw;
+      margin-right: 1.625vw;
+    }
+    @include nmd {
+      font-size: 13vw;
+      margin-right: 3.625vw;
+    }
+    @include nsm {
+      font-size: 23vw;
+      margin-right: 7.625vw;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23.4px;
+    @include nlg {
+      font-size: 1.45vw;
+      line-height: 1.9vw;
+    }
+    @include nmd {
+      font-size: 3.1vw;
+      line-height: 3.7vw;
+    }
+    @include nsm {
+      font-size: 5.5vw;
+      line-height: 6.7vw;
+    }
+  }
+}
+.benefit {
+  background-color: #fff;
+  color: black;
+  &__container {
+    height: 529px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include nsm {
+      height: 240.5vw;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: 78px;
+    line-height: 85.8px;
+    color: #e02725;
+    padding-top: 57px;
+    text-align: center;
+    @include nlg {
+      font-size: 76px;
+    }
+    @include nmd {
+      font-size: 78px;
+      padding-top: 15px;
+    }
+    @include nsm {
+      padding-top: 9vw;
+      font-size: 11.2vw;
+      line-height: 13vw;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+    @include nsm {
+      display: none;
+    }
+  }
+
+  &__wrapper-mob {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+    display: none;
+    @include nsm {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 7vw;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include nsm {
+      width: 46vw;
+      margin-bottom: 4vw;
+    }
+  }
+
+  // &__item:nth-child(2) > :last-child {
+  //   width: 206px;
+  // }
+
+  // &__item:nth-child(4) > :last-child {
+  //   width: 157px;
+  // }
+
+  &__img {
+    max-width: 192px;
+    @include nsm {
+      max-width: 42vw;
+      height: 42vw;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    width: 247px;
+    text-align: center;
+    padding-top: 25px;
+    @include nsm {
+      font-size: 4vw;
+      line-height: 4.9vw;
+      width: 36vw;
+      padding-top: 3vw;
+    }
+  }
+  &__short-text {
+    width: 150px;
+  }
+}
+
+.yoga {
+  display: flex;
+  &__container {
+    background: url('/images/landing/y-foot-trainer-mio/yoga/desktop/bg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    @include nlg {
+      width: 156%;
+      height: 72.6vw;
+    }
+    @include nmd {
+      background: url('/images/landing/y-foot-trainer-mio/yoga/tablet/bg.webp');
+      background-size: cover;
+      height: 133.5vw;
+    }
+    @include nsm {
+      background: url('/images/landing/y-foot-trainer-mio/yoga/mobile/bg.webp');
+      background-size: cover;
+      height: 262vw;
+    }
+  }
+
+  & .container-box {
+    padding-top: 129px;
+    display: flex;
+    justify-content: flex-end;
+    @include nlg {
+      padding-top: 10.4vw;
+    }
+    @include nmd {
+      padding: 10.4vw 5% 0px 5%;
+      width: 97.75vw;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 727px;
+    text-align: end;
+    @include nlg {
+      max-width: 58.8vw;
+    }
+    @include nmd {
+      max-width: 84.8vw;
+    }
+    @include nsm {
+      max-width: 87.8vw;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41.14px;
+    @include nlg {
+      font-size: 2.75vw;
+      line-height: 3.4vw;
+    }
+    @include nmd {
+      font-size: 4.45vw;
+      line-height: 4.4vw;
+    }
+    @include nsm {
+      font-size: 7.6vw;
+      line-height: 7.4vw;
+    }
+  }
+
+  &__subtitle-red {
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 74.8px;
+    color: #e02725;
+    text-transform: uppercase;
+    @include nlg {
+      font-size: 5.49vw;
+      line-height: 6vw;
+    }
+    @include nmd {
+      font-size: 7.9vw;
+      line-height: 9vw;
+    }
+    @include nsm {
+      font-size: 8.15vw;
+      line-height: 9.6vw;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 32px;
+    @include nlg {
+      font-size: 1.62vw;
+      line-height: 2.25vw;
+      margin-top: 2.6vw;
+    }
+    @include nmd {
+      font-size: 2.55vw;
+      line-height: 3.45vw;
+      margin-top: 4vw;
+    }
+    @include nsm {
+      font-size: 4.85vw;
+      line-height: 7.2vw;
+      margin-top: 2vw;
+      width: 83vw;
+    }
+  }
+
+  &__frame {
+    max-width: 560px;
+    display: flex;
+    align-items: center;
+    margin-top: 63px;
+    @include nlg {
+      margin-top: 5.1vw;
+      max-width: 46vw;
+    }
+    @include nmd {
+      margin-top: 4.1vw;
+      max-width: 54vw;
+    }
+    @include nsm {
+      margin-top: 129.1vw;
+      max-width: 88vw;
+    }
+  }
+
+  &__text2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    @include nlg {
+      font-size: 1.7vw;
+      line-height: 2.3vw;
+    }
+    @include nmd {
+      font-size: 2.53vw;
+      line-height: 3.6vw;
+    }
+    @include nsm {
+      order: 2;
+      font-size: 4.53vw;
+      line-height: 7vw;
+      text-align: left;
+      margin-left: 3.3vw;
+    }
+  }
+
+  &__img {
+    margin-left: 32px;
+    @include nlg {
+      margin-left: 2.6vw;
+      width: 17vw;
+    }
+    @include nmd {
+      margin-left: 3.6vw;
+      width: 20vw;
+    }
+    @include nsm {
+      orphans: 1;
+      margin-left: 0;
+      width: 42vw;
+    }
+  }
+  &__br {
+    display: none;
+    @include nsm {
+      display: block;
+    }
+  }
+}
+
+.platform {
+  position: relative;
+  background: #000;
+
+  
+
+  @include nlg {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  &__container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1000px;
+    opacity: 0.47;
+    z-index: 3;
+    background-color: #000;
+    @include nlgxx {
+      width: 52.08vw;
+    }
+    @include nmd {
+      display: none;
+    }
+  }
+  
+  &__container {
+    display: flex;
+    justify-content: center;
+    
+    height: 900px;
+    z-index: 2;
+
+    @include nlg {
+      width: 156%;
+      height: 71.6vw;
+    }
+    @include nmd {
+      background: url('/images/landing/y-foot-trainer-mio/platform/tablet/bg-2.webp');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 164.9vw;
+    }
+    @include nsm {
+      background: none;
+      height: 100%;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    @include nlg {
+      width: 155%;
+    }
+    @include nmd {
+      width: 100%;
+    }
+  }
+
+  &__text-wrap {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    @include nmd {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41.14px;
+    margin-top: 192px;
+    @include nlg {
+      font-size: 2.74vw;
+      line-height: 3.31vw;
+      margin-top: 15.13vw;
+    }
+    @include nmd {
+      font-size: 4.43vw;
+      line-height: 5.34vw;
+      margin-top: 94.09vw;
+    }
+    @include nsm {
+      font-size: 7.19vw;
+      line-height: 8.44vw;
+      margin-top: 101.09vw;
+    }
+  }
+
+  &__title-red,   &__title {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 900;
+    @include nlg {
+      font-size: 4.84vw;
+      line-height: 5.33vw;
+    }
+    @include nmd {
+      font-size: 7.03vw;
+      line-height: 7.68vw;
+    }
+  }
+
+  &__title-red {
+    color: #E02725;
+    text-transform: uppercase;
+    margin-top: 5px;
+    @include nlg {
+      margin-top: 5px;
+    }
+    @include nsm {
+      font-size: 7.50vw;
+      line-height: 8.44vw;
+      margin-top: 0px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    @include nsm {
+      font-size: 12.50vw;
+      line-height: 14.75vw;
+    }
+  }
+
+
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    width: 557px;
+    margin-top: 24.5px;
+    @include nlg {
+      font-size: 1.61vw;
+      line-height: 2.26vw;
+      width: 557px;
+      margin-top: 2.39vw;
+    }
+    @include nmd {
+      font-size: 2.60vw;
+      line-height: 3.65vw;
+      margin: 3.3vw auto 0px auto;
+      width: 93.58vw;
+    }
+    @include nsm {
+      font-size: 5vw;
+      line-height: 7.19vw;
+      margin-top: 5.94vw;
+      width: 84.94vw;
+    }
+  }
+
+  &__button {
+    font-weight: 600;
+    background-color: #E03638;
+    padding: 16px 43px;
+    border-radius: 17px;
+    width: 190px;
+    font-size: 21.8px;
+    line-height: 26.57px;
+    margin-top: 67px;
+
+    @include nlg {
+      padding: 1.29vw 3.47vw;
+      width: 15.33vw;
+      font-size: 1.69vw;
+      line-height: 2.10vw;
+      margin-top: 5.41vw;
+    }
+    @include nmd {
+      padding: 2.85vw 12.5vw;
+      font-size: 2.69vw;
+      line-height: 2.1vw;
+      margin: 5.8vw auto;
+      display: flex;
+      justify-content: center;
+    }
+    @include nsm {
+      margin: 12.1vw auto 7.82vw auto;
+      padding: 8.4vw 30vw;
+      font-size: 6.69vw;
+    }
+  }
+
+  &__br {
+    display: none;
+    @include nsm {
+      display: block;
+    }
+  }
+}
+
+
+.anywhere {
+  height: 900px;
+  @include nlg {
+    height: 100%;
+  }
+  & picture {
+    @include nsm {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  @include nmd {
+    height: 118vw;
+  }
+  @include nsm {
+    height: 176vw;
+  }
+
+
+  &__container {
+    height: auto;
+    @include nsm {
+      height: 176vw; 
+    }
+  }
+
+  & .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include nlg {
+      height: auto;
+    }
+  }
+
+  & .container-box {
+    position: absolute;
+  }
+  & .container-box-pagination {
+    width: 1236px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__frame_black {
+    color: #050505;
+  }
+
+  &__frame {
+    max-width: 653px;
+    position: absolute;
+    right: 0px;
+    text-align: end;
+    margin-top: -140px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #050505;
+    @include nlg {
+      padding-right: 2.02vw;
+    }
+    @include nmd {
+      text-align: left;
+      align-items: start;
+      margin-top: -48.96vw;
+      max-width: 94.66vw;
+      padding-right: 4.02vw;
+    }
+    @include nsm {
+      margin-top: -76.5vw;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 74.8px;
+    text-transform: uppercase;
+    @include nlg {
+      font-size: 5.49vw;
+      line-height: 6.05vw;
+    }
+    @include nmd {
+      font-size: 5.39vw;
+    }
+    @include nsm {
+      line-height: 9.55vw;
+      font-size: 8.9vw;
+    }
+  }
+
+  &__text {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 19.6px;
+    line-height: 28px;
+    margin-top: 17px;
+    max-width: 627px;
+    @include nlg {
+      font-size: 1.42vw;
+      line-height: 2.27vw;
+      margin-top: 1.3vw;
+      max-width: 48vw;
+    }
+    @include nmd {
+      margin-top: 2vw;
+      font-size: 2.6vw;
+      line-height: 3.57vw;
+      max-width: 80vw;
+    }
+    @include nsm {
+      margin-top: 4vw;
+      font-size: 5.7vw;
+      line-height: 5.7vw;
+      max-width: 88.8vw;
+    }
+  }
+
+  &__img {
+    height: 900px;
+    @include nlg {
+      width: 100%;
+      height: auto;
+    }
+    @include nmd {
+      height: 118vw;
+    }
+    @include nsm {
+      height: 176vw;
+    }
+
+  }
+  &__br {
+    @include nmd {
+      display: none;
+    }
+    
+  }
+}
+
+.series {
+  height: 900px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  @include nlg {
+    height: 100%;
+  }
+  @include nsm {
+    height: 153vw;
+  }
+
+  &__container {
+    height: auto;
+    @include nmd {
+      height: 100%;
+    }
+  }
+
+  & .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include nlg {
+      height: auto;
+    }
+  }
+
+  &__slide:nth-of-type(3) &__link-frame {
+    margin-left: 20.7%;
+    @include nlg {
+      margin-left: 20vw;
+    }
+    @include nmd {
+      margin-top: 16vw;
+      margin-left: 16vw;
+    }
+  }
+
+  &__slide:nth-of-type(4) &__link-frame {
+    margin-left: 40.8%;
+    @include nlg {
+      margin-left: 15vw;
+    }
+    @include nmd {
+      margin-left: 16vw;
+      margin-top: 16vw;
+    }
+  }
+
+  & .container-box {
+    position: absolute;
+  }
+
+  & picture {
+    display: flex;
+    justify-content: center;
+    @include nmd {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    height: 900px;
+    display: block;
+    @include nlg {
+      width: 100%;
+      height: 100%;
+    }
+    @include nmd {
+      height: 100%;
+    }
+  }
+  &__link-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 374px;
+    margin-bottom: 2.4vw;
+    margin-left: -1.45vw;
+    @include nlg {
+      max-width: 378px;
+    }
+    @include nmd {
+      margin-left: 18.55vw;
+      margin-top: 15vw;
+      max-width: 49vw;
+    }
+    @include nsm {
+      margin-top: 15vw;
+      margin-bottom: 5.4vw;
+      margin-left: 21.55vw;
+      margin-top: 15vw;
+      max-width: 75vw;
+    }
+  }
+
+  &__link {
+    padding: 10px 30px 10px 30px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #02000a;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41.14px;
+    @include nlg {
+      font-size: 2.75vw;
+      line-height: 3.3vw;
+      padding: 0.8vw 2.6vw 0.8vw 2.6vw;
+    }
+    @include nmd {
+      font-size: 4.75vw;
+      line-height: 6.3vw;
+    }
+    @include nsm {
+      font-size: 6.75vw;
+      line-height: 11.3vw;
+      padding: 0.8vw 6.6vw 0.8vw 5.6vw;
+    }
+  }
+  &__arrow {
+    max-width: 156px;
+    margin-top: 13px;
+    @include nlg {
+      max-width: 12.6vw;
+      margin-top: 1.05vw;
+    }
+    @include nmd {
+      max-width: 20.6vw;
+      margin-top: 2.05vw;
+    }
+  }
+
+  &__subtitle-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 500;
+    width: 1230px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 67px;
+    padding: 0 10px;
+    @include nlg {
+      width: 99.16vw;
+    }
+    @include nmd {
+      bottom: auto;
+      top: 6vw;
+      margin-bottom: 0px;
+      padding: 0 6vw;
+    }
+  }
+
+  &__frame {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle-first,
+  &__subtitle-second {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 74.8px;
+    display: block;
+    @include nlg {
+      font-size: 5.49vw;
+      line-height: 6.1vw;
+    }
+    @include nmd {
+      font-size: 7.49vw;
+      line-height: 8.1vw;
+    }
+    @include nsm {
+      display: none;
+    }
+  }
+
+  &__subtitle-mob {
+    display: none;
+    @include nsm {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 7.49vw;
+      margin-top: 2vw;
+    }
+  }
+
+  &__logo {
+    @include nlg {
+      width: 30vw;
+    }
+    @include nmd {
+      position: absolute;
+      right: 3.5vw;
+      bottom: 9.4vw;
+      width: 35vw;
+    }
+    @include nsm {
+      right: 48.5vw;
+      bottom: -9.6vw;
+      width: 45vw;
+    }
+  }
+}
+
+
+// Настройки слайдера
+
+.swiper-slide {
+  width: auto;
+  
+}
+.container-box-pag {
+  @include nlgxx {
+
+  }
+}
+// .swiper-pagination {
+//   position: absolute;
+//   z-index: 3;
+//   bottom: 500px;
+//   left: 50%;
+//   display: flex;
+//   justify-content: flex-end;
+//   @include nsm {
+//     display: none;
+//   }
+// }
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    padding-left: 990px;
+    @include nlg {
+      padding-left: 76.48vw;
+    }
+    @include nmd {
+      padding-left: 1.3vw;
+    }
+    @include nsm {
+      padding-left: 0;
+    }
+  }
+
+
+.swiper-pagination-horizontal.swiper-pagination-horizontal {
+  bottom: 250px;
+  @include nlg {
+    bottom: 105px;
+  }
+  @include nmd {
+    bottom: 4.4vw;
+  }
+  @include nsm {
+    bottom: 7vw;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #E03638;
+}
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  @include nlg {
+    width: 1.37vw;
+    height: 1.37vw;
+  }
+  @include nmd {
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+  @include nsm {
+    width: 4.3vw;
+    height: 4.3vw;
+  }
+}
+// расстояние между точками пагинации
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+  @include nlg {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.81vw);
+  }
+  @include nmd {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.81vw);
+  }
+  @include nmd {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 1.45vw);
+  }
+}
+
+// Анимации
+
+.description__logo {
+  opacity: 0;
+}
+
+.description__logo.visible {
+  animation-name: slide;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+.description__japanese-character {
+  opacity: 0;
+}
+
+.description__japanese-character.visible {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  opacity: 1;
+}
+
+.description__title {
+  opacity: 0;
+}
+
+.description__title.visible {
+  animation-name: slide;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.description__frame-text {
+  opacity: 0;
+}
+
+.description__frame-text.visible {
+  opacity: 1;
+  animation-name: visible;
+  animation-duration: 2s;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.effect__subtitle,
+.effect__subtitle-mini,
+.effect__subtitle-text,
+.rejuvenation__subtitle,
+.rejuvenation__subtitle-bold,
+.rejuvenation__text,
+.flatypodia__subtitle,
+.flatypodia__subtitle-red,
+.flatypodia__text,
+.flatypodia__footnote,
+.skin__subtitle,
+.skin__subtitle-red,
+.skin__text-bold,
+.skin__img,
+.benefit__subtitle,
+.benefit__item,
+.yoga__subtitle,
+.yoga__subtitle-red,
+.yoga__text2,
+.yoga__text,
+.yoga__img,
+.platform__subtitle,
+.platform__title-red,
+.platform__title,
+.platform__text,
+.anywhere__title,
+.anywhere__text,
+.series__link,
+.series__arrow,
+.series__subtitle-first,
+.series__subtitle-second,
+.series__subtitle-mob,
+.swiper-pagination {
+  opacity: 0;
+  transition: opacity 1.7s ease;
+}
+
+.effect__subtitle.visible,
+.effect__subtitle-mini.visible,
+.effect__subtitle-text.visible,
+.rejuvenation__subtitle.visible,
+.rejuvenation__subtitle-bold.visible,
+.rejuvenation__text.visible,
+.flatypodia__subtitle.visible,
+.flatypodia__subtitle-red.visible,
+.flatypodia__text.visible,
+.flatypodia__footnote.visible,
+.skin__subtitle.visible,
+.skin__subtitle-red.visible,
+.skin__text-bold.visible,
+.skin__img.visible,
+.benefit__subtitle.visible,
+.benefit__item.visible,
+.yoga__subtitle.visible,
+.yoga__subtitle-red.visible,
+.yoga__text2.visible,
+.yoga__text.visible,
+.yoga__img.visible,
+.platform__subtitle.visible,
+.platform__title-red.visible,
+.platform__title.visible,
+.platform__text.visible,
+.anywhere__title.visible,
+.anywhere__text.visible,
+.series__link.visible,
+.series__arrow.visible,
+.series__subtitle-first.visible,
+.series__subtitle-second.visible,
+.series__subtitle-mob.visible,
+.swiper-pagination.visible {
+  opacity: 1;
+}
+
+.rejuvenation__item,
+.features__item {
+  transform: translateX(50%);
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 0;
+  @include nlg {
+    transform: translateX(40%);
+  }
+}
+
+.rejuvenation__item.visible,
+.features__item.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
